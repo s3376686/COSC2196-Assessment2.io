@@ -1,1 +1,1 @@
-# COSC2196-Assessment2
+# s3204581.github.io
