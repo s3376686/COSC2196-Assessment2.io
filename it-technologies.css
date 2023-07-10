@@ -1,0 +1,32 @@
+h3:hover {
+    color: red;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+
+}
+.topics{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    border: black;
+}
+
+.profile {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+b a {
+    color: black;
+}

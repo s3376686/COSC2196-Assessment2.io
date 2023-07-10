@@ -67,8 +67,15 @@ a {
     transition: 0.3s ease-out;
 }
 
+
 .nav-menu li {
     margin-top: 20%;
+    
+}
+
+.nav-menu li a{
+    font-size: 20px;
+
 }
 
 .container {
