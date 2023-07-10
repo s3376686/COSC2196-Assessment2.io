@@ -17,5 +17,6 @@ table {
   }
 
   #ideal-job-heading {
-    margin-top: 25px;
+    margin: 25px;
+    text-align: center;
   }
