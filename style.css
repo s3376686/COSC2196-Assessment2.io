@@ -7,21 +7,44 @@ header {
     background-color: #262626;
     min-height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
 }
 
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+}
+
+li {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+}
+
 h1 {
+    font-family: "Arial", sans-serif;
+    margin: auto;
     color: white;
     text-decoration: none;
     text-align: center;
+    font-size: 46px;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "Arial", sans-serif;
+    font-size: 36px;
 }
 
 ul {
     list-style-type: disc;
-    margin-left: 20px;
-  }
-  
+    margin: 20px;
+}
+
 
 article {
     padding: 20px;
@@ -35,19 +58,27 @@ img {
     width: 50px;
 }
 
+a:hover {
+    color: red;
+}
 
 a {
-    color: white
+    color: white;
+    transition: 0.3s ease-out;
+}
+
+.nav-menu li {
+    margin-top: 20%;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 10em 1fr 50px;
+    grid-template-columns: 10em 1fr 10em;
     grid-template-rows: 1fr;
     height: 100vh;
 }
 
-li {
+.nav-meunu > li {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
