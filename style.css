@@ -1,24 +1,13 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
+/* Header */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #262626;
-    min-height: 70px;
+    padding: 10px;
+    text-align: center;
     display: flex;
-    justify-content:flex-start;
-    align-items: center;
-}
-
-p {
-    font-family: "Arial", sans-serif;
-    font-size: 30px;
-}
-
-li {
-    font-family: "Arial", sans-serif;
-    font-size: 30px;
 }
 
 h1 {
@@ -30,26 +19,49 @@ h1 {
     font-size: 46px;
 }
 
-h2 {
+/* Navigation */
+nav {
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    -webkit-transition: top 0.3s ease, padding 0.3s ease;
+    transition: top 0.3s ease, padding 0.3s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
     font-family: "Arial", sans-serif;
-    font-size: 40px;
+    font-size: 26px;
+    transition: 0.3s ease-out;
 }
 
-h3 {
-    font-family: "Arial", sans-serif;
-    font-size: 36px;
+nav a:hover {
+    color: red;
 }
 
-ul {
-    list-style-type: disc;
-    margin: 20px;
-}
-
-
-article {
-    padding: 20px;
-}
-
+/* Hamburger Menu */
 img {
     fill: red;
     padding: 20px;
@@ -57,67 +69,8 @@ img {
     width: 50px;
 }
 
-a:hover {
-    color: red;
-}
-
-a {
-    color: white;
-    transition: 0.3s ease-out;
-}
-
-
-.nav-menu li {
-    margin-top: 20%;
-    
-}
-
-.nav-menu li a{
-    font-size: 20px;
-
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 10em 1fr 10em;
-    grid-template-rows: 1fr;
-    height: 100vh;
-}
-
-.nav-meunu > li {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    background-color: white;
-}
-
-.navbar {
-    width: 0;
-    overflow-x: hidden;
-}
-
-.navbar.active {
-
-    width: 10em;
-    height: auto;
-    background-color: #262626;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: row;
-}
-
 .hamburger {
-    margin-left: 15px;
+    padding: 20px;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -125,9 +78,87 @@ a {
 }
 
 .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
 }
 
 .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/* Content */
+h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Arial", sans-serif;
+    font-size: 27px;
+}
+
+p {
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+}
+
+li {
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    font-family: "Arial", sans-serif;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e5e5e5;
+}
+
+.container {
+    margin-top: 120px;
+    margin-left: 150px;
+    text-align: left;
+    width: 70%;
+}
+
+.container a {
+    color: black;
+    font-family: "Arial", sans-serif;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.container a:hover {
+    color: red;
+}
+
+.pushed-content {
+    margin-top: 200px;
 }
