@@ -9,7 +9,8 @@
 	    header, .navbar { z-index:20; }
 		.navbar { top:90px; }
         img { fill: revert; padding: revert; height: revert; width: revert;}
-		p { font-size:1em; }
+		p, li { font-size:1em; }
+		li { padding:5px 0px; }
 	</style>
 </head>
 
@@ -36,25 +37,59 @@
 		<div class="row">
 			<div class="column medium-7 large-7">
         <h2>Project Idea</h2>
+		<h3>Summary</h3>
 		<p>Email phishing attacks (baiting an unsuspecting computer user and hoping that they will bite) are some of the most frequent and dangerous online threats that target individuals and businesses these days.</p>
 		<p>Often being social engineering attacks, phishing emails can be cleverly crafted to appear completely benign technically to both user and antimalware scanner but tricking an email recipient into cliking on 
-		malicious site that looks legitimate or download a document that hides malware.<br>
-		Combating ongoing and ever evolving phishing email threats typically requires a team of cyber security analysists, end user education, expensive email scanner platforms and malware sandboxes.
-		</p>
+		malicious site that looks legitimate or download a document that hides malware.</p>
+		<p><b>PhishNet</b> is is phishing email analysis and open intelligence system designed to expedite email triage and analysis process as well as threat intelligence sharing.</p>
+		<h3>Challanges and Motivation</h3>
+		<p>Adversaries continuously invent new and creative ways to fool users into believing their actions involve a legitimate website or email by forging websites to appear identical to the real sites.
+		<br>Combating ongoing and ever evolving phishing email threats typically requires a team of cyber security analysists, end user education, expensive email scanner platforms and malware sandboxes.</p>
 		<p>Our team #insert team name# believes we can help small businesses and individuals fight against fraud and phishing emails avoiding costly enterprise solutions, enriching community threat intelligence as well as being an open system providing and consuming external system APIs.</p>
 			</div>
 			<div class="column medium-5 large-5">
 				<img src="https://cdn.mos.cms.futurecdn.net/pMfzLC5B5bDaupGWaa9DWN-970-80.jpg"></img>
 				<i>Image credit: Shutterstock</i>
+				<p>Three possible methods that can reduce incidents from occuring due to phishing attacks are:
+				<ol>
+					<li>Detect and prevent phishing attacks from reaching recipient</li>
+					<li>Detect and prevent after the user has been tricked into opening up a site url or attachment</li>
+					<li>User education and tooling into indentifying potential threats</li>
+				</ol>
+				While all three above solutions are important to consider in combating phishing threats, User education and tooling is in our opinion the most important method shall the defences fail to prevent an attack programatically.
+				</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="column medium-12 large-12">
-			<p><b>PhishNet</b> is is phishing email analysis and open intelligence system designed to expedite email triage and analysis process as well as threat intelligence sharing.</p>
-			<p></p>
-			<p></p>
+			<h4>Identifying the market</h4>
+			<p>What the project is not intended to do:
+				<ul>
+					<li>Detect and Prevent phishing emails from reaching recipients.<br>There are a number of mature commercial(Microsoft Defender, Forcepoint) and open source solutions (i.e. CLamAV, SpamAssassin)/
+					<br>However, it is not possible to prevent a proportion of phishing emails to day with ever evolving techniques from adversaries.
+					<br>This means only the big market players with enough human resource and budget capacity can provide some form of protection in terms of evolving threat detection rules and intelligence.
+					</li>
+					<li>Contain or remediate phishing email incidents.<br>This type of functionality would largely depend on the users environment.</li>
+					<li>Make logical decisions on behalf of the user</li>
+				</ul>
+			</p>
 			</div>
 		</div>
+		<div class="row">
+			<div class="column medium-12 large-12">
+				<h3>Competitor analysis</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column medium-12 large-12">
+				<h3>References</h3>
+				<ol>
+					<li>https://www.sciencedirect.com/science/article/abs/pii/S1361372318300071</li>
+				
+				</ol>
+			</div>
+		</div>
+		
 		
 	<script src="script.js"></script>
 </body>
