@@ -108,10 +108,74 @@
 				</p>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="column medium-12 large-12">
+				<h3>Product description</h3>
+				<p>This will be a web based application hosted on the cloud allowing users to sign up, upload emails they had received for analysis and option to have a privately analysed email or to share the analysis results with the community. Once user uploads email, it will be deconstructed; attachments and links extracted and scanned using open source scanners like VirusTotal.</p>
+				<p>All records will be kept in backend relational database (users login details, emails analysed, sender list, attachments, links).</p>
+				<p>Emails will be analysed and tagged as benign, anomalous, malicious accordingly by the system and user will be able to adjust the verdict tags,users will be also able to contribute to community by specifying if analysis had technical errors</p>
+				<p>Ongoing maintenance of this project would be largely crowd sourced in terms of intelligence, i.e. indicators of malicious senders, files, links, etc would be shared by analysists and users to the community.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column medium-12 large-12">
+				<h3>Product features</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column medium-6 large-6">
+				<ul>
+					<li>Abilities given for users to register and create an account and to login to the application</li>
+					<li>Abilities given for users to upload email to auto-analyse an email for threats, sender authenticity</li>
+					<li>Safely preview the email via web interface and analyse links and attachments</li>
+					<li>Store email metadata, content and analysis results in database as normalized records</li>
+					<li>Extract and store email attachment for analysis</li>
+					<li>Scan attachments using REMnux Toolkit for Malware Analysts</li>
+					<li>Scan attachments and links using using external APIs (VirusTotal, Urlscan.io)</li>
+					<li>Abilities given for users to classify analysed emails as Benign, Spam, Phishing, Spear Phishing</li>
+					<li>Abilities given for users to search for analisys reportd</li>
+					<li>Use previously stored email data and classifications other users have made to relevant metadata and content in aws application to enhance accuracy in analysis of emails</li>
+					<li>Provide API endpoints for developers to query and update various metadata (i.e. malicious URLs, email domains, web domains).</li>
+					<li>Abilities given for users to mark a existing email analysis as false positive</li>
+				</ul>
+			</div>
+			<div class="column medium-6 large-6">
+				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column medium-12 large-12">
+				<h3>PhishNet MVP functionality</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column medium-8 large-8">
+				<img src="images/functionality_diagram.png" style="max-width:100%;">
+			</div>
+			<div class="column medium-4 large-4">
+				<ul>
+					<li>Users forward to or upload emails to PhishNet system and initialize analysis</li>
+					<li>Any sensitive information like Personal Identifiable information is stripped from emails automatically</li>
+					<li>PhishNet automatically checks if the sender is authentic by verifying SPF, DMARC, DKIM records against sender email address and will automatically classify email as suspicious if not verified</li>
+					<li>PhishNet automatically checks sender address or domain, contained URLs and attachments against existing indicators already in the database and will automatically classify email as suspicious/malicious accordingly</li>
+					<li>If threats not found in existing records, PhishNet checks external APIs by hash of file, URL address and if found, will automatically classify email as suspicious/malicious accordingly</li>
+					<li>If threats not found in external intelligence records, scan URLs and attachments using toolkits and sandboxing and will automatically classify email as suspicious/malicious accordingly</li>
+					<li>User is able to store and share the analysis report with other PhishNet users</li>
+					<li>Users are able to query PhishNet analysis reports by means of searching and Dashboards</li>
+				</ul>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="column medium-12 large-12">
 				<h3>Competitor analysis</h3>
 				<p>There are a number of commercial and non-commercial solutions out there to date that attempt at assist at identifying malicious emails</p>
+				<table>
+					<
+				</table>
 			</div>
 		</div>
 		<div class="row">
