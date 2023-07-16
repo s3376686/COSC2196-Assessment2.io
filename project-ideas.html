@@ -156,6 +156,54 @@
 				</p>
 			</div>
 		</div>
+		Product features 
+
+    Abilities given for users to register and create an account and to login to the application 
+
+    Abilities given for users to upload email to auto-analyse an email for threats, sender authenticity 
+
+    Safely preview the email via web interface and analyse links and attachments 
+
+    Store email metadata, content, and analysis results in database as normalized records 
+
+    Extract and store email attachment for analysis 
+
+    Scan attachments using REMnux Toolkit for Malware Analysts 
+
+    Scan attachments and links using using external APIs (VirusTotal, Urlscan.io) 
+
+    Abilities given for users to classify analysed emails as Benign, Spam, Phishing, Spear Phishing 
+
+    Abilities given for users to search for analysis reports 
+
+    Use previously stored email data and classifications other users have made to relevant metadata and content in AWS (Amazon Web Services) application to enhance accuracy in analysis of emails 
+
+    Provide API endpoints for developers to query and update various metadata (i.e., malicious URLs, email domains, web domains). 
+
+    Abilities given for users to mark an existing email analysis as false positive 
+
+  
+
+  
+
+PhishNet MVP functionality 
+
+		    Users forward to or upload emails to PhishNet system and initialize analysis 
+
+    Any sensitive information like Personal Identifiable information is stripped from emails automatically 
+
+    PhishNet automatically checks if the sender is authentic by verifying SPF, DMARC, DKIM records against sender email address and will automatically classify email as suspicious if not verified 
+
+    PhishNet automatically checks sender address or domain, contained URLs and attachments against existing indicators already in the database and will automatically classify email as suspicious/malicious accordingly 
+
+    If threats not found in existing records, PhishNet checks external APIs by hash of file, URL address and if found, will automatically classify email as suspicious/malicious accordingly 
+
+    If threats not found in external intelligence records, scan URLs and attachments using toolkits and sandboxing and will automatically classify email as suspicious/malicious accordingly 
+
+    User can store and share the analysis report with other PhishNet users 
+
+    Users can query PhishNet analysis reports by means of searching and Dashboards 
+		
 		<div class="row">
 			<div class="column medium-12 large-12">
 				<h3>Competitor analysis</h3>
