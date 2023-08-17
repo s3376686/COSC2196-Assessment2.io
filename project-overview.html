@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="grids.css">
+	<link rel="stylesheet" href="style.css">
+	<title>A2</title>
+	<style>
+		header,
+		.navbar {
+			z-index: 20;
+		}
+
+		.navbar {
+			top: 90px;
+		}
+
+		img {
+			fill: revert;
+			padding: revert;
+			height: revert;
+			width: revert;
+		}
+
+		p,
+		li {
+			font-size: 1em;
+		}
+
+		li {
+			padding: 5px 0px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="hamburger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+		<h1 class="heading">Assignment 3</h1>
+		<img src="RMIT.svg" alt="RMIT-Logo" style="width:80px; height:80px;">
+	</header>
+	<nav>
+		<ul>
+            <li><a class="nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-link" href="./team-profile.html">Team Profile</a></li>
+            <li><a class="nav-link" href="./tools.html">Tools</a></li>
+            <li><a class="nav-link" href="./project-overview.html">Our Project</a></li>
+            <li><a class="nav-link" href="./skillsjobs.html">Skills and Jobs</a></li>
+            <li><a class="nav-link" href="./reflections.html">Reflections</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="column medium-7 large-7">
+				<h2>Project Idea</h2>
+				<h3>Summary</h3>
+				<p>Email phishing attacks (baiting an unsuspecting computer user and hoping that they will bite) are
+					some of the most frequent and dangerous online threats that target individuals and businesses these
+					days.</p>
+				<p>Often being social engineering attacks, phishing emails can be cleverly crafted to appear completely
+					benign technically to both user and antimalware scanner but tricking an email recipient into
+					clicking
+					on a malicious site that looks legitimate or download a document that hides malware.</p>
+				<p><b>PhishNet</b> is a phishing email analysis and open intelligence system designed to expedite email
+					triage and analysis process as well as threat intelligence sharing.</p>
+				<h3>Challenges and Motivation</h3>
+				<p>Adversaries continuously invent new and creative ways to fool users into believing their actions
+					involve a legitimate website or email by forging websites to appear identical to the real sites.
+					<br>Combating ongoing and ever evolving phishing email threats typically requires a team of cyber
+					security analysists, end user education, expensive email scanner platforms and malware sandboxes.
+				</p>
+				<p>Our team, Agile-Expensibles, believes we can help small businesses and individuals fight against
+					fraud
+					and phishing emails avoiding costly enterprise solutions, enriching community threat intelligence as
+					well as being an open system providing and consuming external system APIs.</p>
+			</div>
+			<div class="column medium-5 large-5">
+				<img src="./images/phishing1.jpg"></img>
+				<i>Image credit: Shutterstock</i>
+				<p>Three methods that can reduce incidents from occurring due to phishing attacks are:
+				<ol>
+					<li>Detect and prevent phishing attacks from reaching recipient</li>
+					<li>Detect and prevent after the user has been tricked into opening a site URL or attachment</li>
+					<li>User education and tooling into identifying potential threats</li>
+				</ol>
+				While all three above solutions are important to consider in combating phishing threats, User education
+				and tooling is the most important method should the defences fail to prevent an attack
+				programmatically.
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column medium-6 large-6">
+				<p>In a typical environment, an investment is made into some form of a solution that attempts at
+					blocking a malicious email by means of:
+				<ul>
+					<li>Link scanning</li>
+					<li>Attachment scanning for viruses</li>
+					<li>Finding keywords identifying spam and phishing</li>
+				</ul>
+				</p>
+				<p>But is this enough to safeguard users? Not always. Security controls can fail, links can be cleverly
+					obfuscated or be hosted on legitimate websites with good reputation but were compromised,
+					malicious documents can be crafted to bypass antivirus detection.</p>
+				<img src="images/phishing2.png">
+			</div>
+			<div class="column medium-6 large-6">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column medium-12 large-12">
+				<h4>Identifying the market</h4>
+				<p>Now that the gap has been identified and demonstrated in above infographic, we present a solution
+					aiming at addressing the specific problems of malicious emails getting through security controls
+					which are to involve a user making an informed decision.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column medium-6 large-6">
+				<p>What are the project objectives:
+				<ul>
+					<li>Facilitate email analysis and context to help make better informed decisions when investigating
+						emails</li>
+					<li>Integration with other security solutions to automate or at least augment phishing threat
+						response</li>
+					<li>Valuable up to date phishing threat intelligence shared across users and automatic
+						classification of email senders, links and attachments based on currently shared indicators.
+					</li>
+					<li>Consequently, because of using the platform, user becomes educated in understanding email
+						technology and associated threats.</li>
+				</ul>
+				</p>
+			</div>
+			<div class="column medium-6 large-6">
+				<p>What the project is not intended to do:
+				<ul>
+					<li>Detect and Prevent phishing emails from reaching recipients.<br>There are several mature
+						commercial (Microsoft Defender, Forcepoint Email Gateways) and open-source solutions (i.e.
+						CLamAV, SpamAssassin)
+						<br>However, it is not possible to prevent a proportion of phishing emails today with ever
+						evolving techniques from adversaries.
+						<br>This means only the big market players with enough human resource and budget capacity can
+						provide some form of protection in terms of evolving threat detection rules and intelligence.
+					</li>
+					<li>Contain or remediate phishing email incidents.<br>This type of functionality would depend on the
+						user's environment.</li>
+					<li>Make logical decisions on behalf of the user</li>
+				</ul>
+				</p>
+			</div>
+		</div>
+		<h3>Product features</h3>
+
+		<p>
+			<li>Abilities given for users to register and create an account and to login to the application</li>
+
+			<li>Abilities given for users to upload email to auto-analyse an email for threats, sender authenticity</li>
+
+			<li>Safely preview the email via web interface and analyse links and attachments</li>
+
+			<li>Store email metadata, content, and analysis results in database as normalized records</li>
+
+			<li>Extract and store email attachment for analysis</li>
+
+			<li>Scan attachments using REMnux Toolkit for Malware Analysts</li>
+
+			<li>Scan attachments and links using using external APIs (VirusTotal, Urlscan.io)</li>
+
+			<li>Abilities given for users to classify analysed emails as Benign, Spam, Phishing, Spear Phishing</li>
+
+			<li>Abilities given for users to search for analysis reports</li>
+
+			<li>Use previously stored email data and classifications other users have made to relevant metadata and
+				content in
+				AWS (Amazon Web Services) application to enhance accuracy in analysis of emails</li>
+
+			<li>Provide API endpoints for developers to query and update various metadata (i.e., malicious URLs, email
+				domains,
+				web domains).</li>
+
+			<li>Abilities given for users to mark an existing email analysis as false positive</li>
+		</p>
+
+		<h3>PhishNet MVP functionality</h3>
+		<img src="./images/phishing3.png">
+
+		<p>
+			<li>Users forward to or upload emails to PhishNet system and initialize analysis</li>
+
+			<li>Any sensitive information like Personal Identifiable information is stripped from emails automatically
+			</li>
+
+			<li>PhishNet automatically checks if the sender is authentic by verifying SPF, DMARC, DKIM records against
+				sender
+				email address and will automatically classify email as suspicious if not verified</li>
+
+			<li>PhishNet automatically checks sender address or domain, contained URLs and attachments against existing
+				indicators already in the database and will automatically classify email as suspicious/malicious
+				accordingly</li>
+
+			<li>If threats not found in existing records, PhishNet checks external APIs by hash of file, URL address and
+				if
+				found, will automatically classify email as suspicious/malicious accordingly</li>
+
+			<li>If threats not found in external intelligence records, scan URLs and attachments using toolkits and
+				sandboxing
+				and will automatically classify email as suspicious/malicious accordingly</li>
+
+			<li>User can store and share the analysis report with other PhishNet users</li>
+
+			<li>Users can query PhishNet analysis reports by means of searching and Dashboards</li>
+		</p>
+
+		<div class="row">
+			<div class="column medium-12 large-12">
+				<h3>Competitor analysis</h3>
+				<p>There are a number of commercial and non-commercial solutions out there to date that attempt at
+					assist at identifying malicious emails</p>
+				<img src="./images/phishing4.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="column medium-12 large-12">
+				<h3>References</h3>
+				<ol>
+					<li>"Phishing – challenges and solutions", Ike Vayansky, Sathish Kumar,
+						https://www.sciencedirect.com/science/article/abs/pii/S1361372318300071</li>
+
+				</ol>
+			</div>
+		</div>
+
+
+		<script src="script.js"></script>
+</body>
+
+</html>

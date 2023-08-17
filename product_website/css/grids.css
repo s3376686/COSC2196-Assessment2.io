@@ -1453,6 +1453,14 @@ select {
 
 @media only screen and (min-width: 1700px) {
   .row {max-width: 1400px}
-  .full-width-container>.row {max-width: 100%}
+  .full-width-container>.row, .row.fullwidth {max-width: 100%}
+}
+
+@media only screen and (max-width: 747px) {
+  .ccm-page .ccm-layout-column, .ccm-page .ccm-layout-column:last-child {
+	float:none; clear:both;
+	width:auto !important
+  }
+
 }
 
