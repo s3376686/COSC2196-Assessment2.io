@@ -1,45 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Assignment 3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-    <header>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <h1 class="heading">Assignment 3</h1>
-        <img src="RMIT.svg" alt="RMIT-Logo">
-    </header>
-    <nav>
-        <ul>
-            <li><a class="nav-link" href="./index.html">Home</a></li>
-            <li><a class="nav-link" href="./team-profile.html">Team Profile</a></li>
-            <li><a class="nav-link" href="./tools.html">Tools</a></li>
-            <li><a class="nav-link" href="./project-overview.html">Our Project</a></li>
-            <li><a class="nav-link" href="./skillsjobs.html">Skills and Jobs</a></li>
-            <li><a class="nav-link" href="./reflections.html">Reflections</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <h2>Welcome to the Assignment 3 Web Page for COSC2196 Essentials of Information Technology</h2>
-        <br>
-        <p>We are <span class="team-name">The Agile-Expensables</span> and this page contains:</p>
-        <ul>
-            <li>Our team profile</li>
-            <li>The tools we used</li>
-            <li>An overview of our project</li>
-            <li>A detailed description of our project</li>
-            <li>Position descriptions of 4 potential workers</li>
-            <li>Our individual reflections</li>
-        </ul>
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#">The Agile Expensables - Assignment 3</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#" class="desktop-item">The Team</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">The Team</label>
+          <ul class="drop-menu">
+            <li><a href="#">Team Profiles</a></li>
+            <li><a href="#">Reflections</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">Project Team</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Main Menu</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>Project Team</header>
+                <ul class="mega-links">
+                  <li><a href="#">Team Profile</a></li>
+                  <li><a href="#">Group Reflection</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>The Project</header>
+                <ul class="mega-links">
+                  <li><a href="#">Project Description</a></li>
+                  <li><a href="#">Overview</a></li>
+                  <li><a href="#">Skills and Jobs</a></li>
+                  <li><a href="#">Feedback</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Project Details</header>
+                <ul class="mega-links">
+                  <li><a href="#">Aims</a></li>
+                  <li><a href="#">Plans and Progress</a></li>
+                  <li><a href="#">Roles</a></li>
+                  <li><a href="#">Scope and Limits</a></li>
+                  <li><a href="#">Tools and Technologies</a></li>
+                  <li><a href="#">Testing</a></li>
+                  <li><a href="#">Timeframe</a></li>
+                  <li><a href="#">Risks</a></li>
+                  <li><a href="#">Group Processes and Communications</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Utilities</header>
+                <ul class="mega-links">
+                  <li><a href="#">Tools</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Glossary</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
     </div>
-    <script src="script.js"></script>
+  </nav>
+
+  <div class="body-text">
+    <h2>Welcome to the Assignment 3 Web Page for COSC2196 Essentials of Information Technology</h2>
+    <br>
+    <p>We are <span class="team-name">The Agile-Expensables</span> and this page contains:</p>
+    <ul>
+      <li>- Our team profile</li>
+      <li>- The tools we used</li>
+      <li>- An overview of our project</li>
+      <li>- A detailed description of our project</li>
+      <li>- Position descriptions of 4 potential workers</li>
+      <li>- Our individual reflections</li>
+    </ul>
+  </div>
+
 </body>
 
 </html>
